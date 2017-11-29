@@ -61,7 +61,7 @@ body {
 
 .banner {
 	text-align: center;
-	background: url('images/bg-banner%202.png') no-repeat right top, url('../images/bg-banner%201.png') no-repeat left top;
+	background: url('images/bg-banner%202.png') no-repeat right top, url('images/bg-banner%201.png') no-repeat left top;
 	position: relative;
 	height: 605px;
 }
