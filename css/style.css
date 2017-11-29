@@ -116,7 +116,7 @@ body {
 }
 
 .images {
-	background: url("/images/leaf.png") no-repeat;
+	background: url("../images/leaf.png") no-repeat;
 	min-height: 648px;
 	background-position: right bottom;
 }
@@ -157,7 +157,7 @@ body {
 
 .img-2 {
 	width: 24%;
-	background-image: url("/images/picture1.png");
+	background-image: url("~/images/picture1.png");
 	background-size: cover;
 }
 
