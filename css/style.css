@@ -24,19 +24,29 @@ body {
 .header {
 	display: flex;
 	justify-content: space-between;
-	margin: 35px 190px;
+	margin: 0 auto;
+	margin-top: 35px;
+	margin-bottom: 35px;
+	flex-wrap: wrap;
+	align-items: center;
 }
 
 .header .nav {
 	display: flex;
 	flex-direction: row;
 	list-style-type: none;
-
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	margin-right: 135px;
+	
+	
 }
 
 .header img {
 	max-height: 43px;
 	margin-top: 15px;
+	margin-left: 135px;
 }
 
 .header .nav li {
@@ -96,7 +106,7 @@ body {
 	margin-bottom: 53px;
 }
 
-.banner .bg-color a {
+.banner a {
 	padding: 0;
 	color: #46a651;
 	font-family: "Open Sans";
@@ -149,6 +159,7 @@ body {
 	justify-content: flex-end;
 	align-items: center;
 	background-color: #f1efec;
+	
 }
 
 .img-1 img {
@@ -218,13 +229,15 @@ body {
 	margin-bottom: 10px;
 }
 
-.img-4 .subscribe {
-	background-color: #5ec069;
-	color: #46a651;
+.img-4 .subscribe, .img-4 .btnsub {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 1.2em;
 	padding: 14px 23px;
+} 
+.img-4 .subscribe {
+	background-color: #5ec069;
+	color: #46a651;
 	padding-right: 0px;
 	border: 0;
 	margin-right: -4px;
@@ -233,10 +246,6 @@ body {
 .img-4 .btnsub {
 	background-color: #348e3e;
 	color: #fff;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 1.2em;
-	padding: 14px 23px;
 	margin-right: 80px;
 	border: none;
 }
@@ -445,11 +454,12 @@ body {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.lineBox .left,
-.lineBox .center {
+.lineBox .left {
 	text-align: left;
 }
-
+.lineBox .center {
+	text-align: center;
+}
 .lineBox .left {
 	width: 33%;
 }
@@ -548,4 +558,178 @@ body {
 	font-weight: 400;
 	line-height: 1.4em;
 	padding: 40px 0px;
+}
+@media (max-width: 1227px) {
+	.header .nav {
+		justify-content: center;
+		margin: 0 auto;
+		margin-top: 15px;
+	}
+	.header img {
+		margin: 0 auto;
+	}
+	
+}
+@media (max-width: 900px) {
+	.banner h1 {
+		font-size: 35px;
+	}
+	.banner p {
+		font-size: 20px;
+	}
+	.banner a {
+		font-size: 22px;
+	}
+	/*images */
+	.images {
+		background: none;
+	}
+	.images .first-row {
+		max-height: 150px;
+	}
+	.all-pictures {
+		max-height: 150px;
+	}
+	.img-1 img {
+		margin: 0;
+		height: 40px;
+		margin: 0 auto;
+	}
+	.img-3 h3 {
+		font-size: 20px;
+	}
+	.img-3 p {
+		font-size: 13px;
+	}
+	.img-3 h3,
+	.img-3 p {
+		margin: 0 auto;
+	}
+	.second-row {
+		flex-direction: column;
+		
+	}
+	.left-containers {
+		width: 100%;
+		
+	}
+	.img-4 {
+		align-items: center;
+	}
+	.img-4 h3 {
+		font-size: 20px;
+		margin: 0 auto;
+		margin-top: 20px;
+			
+	}
+	
+	.img-4 .subscribe, .img-4 .btnsub {
+		font-size: 13px;
+		padding: 7px 12px;
+		margin: 0 auto;
+		margin-top: 10px;
+		
+	}
+	.img-4 .subscribe {
+		margin-right: -2px;
+	}
+	.img-4 .text-content {
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 4px;
+		margin-bottom: 25px;
+	}
+	.img-5 {
+		overflow: hidden;
+	}
+	.img-5 img {
+		width: 100%;
+		height: 150px;
+	}
+	.img-6 {
+		max-width: 100%;
+		width: 100%;
+		margin: 0;
+		height: 150px;
+		align-items: center;
+		
+	}
+	.img-6 .facebook img {
+		margin-bottom: 10px;
+		
+	}
+	.img-6 .facebook p {
+		margin: 0;
+		font-size: 13px;
+	}
+}
+@media (max-width: 733px) {
+	.images, .second-row {
+		min-height: 450px;
+	}
+	.events .eventList {
+		flex-direction: column;
+		width: 50%;
+	}
+	.onePanel .more {
+		margin: 30px 0px;
+	}
+	.onePanel {
+		margin-top: 20px;
+		border-bottom: 0.4px solid grey;
+	}
+	.onePanel:hover {
+		background-color: aliceblue;
+	}
+	.footer .nav {
+		flex-wrap: wrap;
+	}
+	.footer .nav li {
+		margin-top: 10px
+	}
+	.lineBox {
+		flex-direction: column;
+		align-items: center;
+		
+	}
+	.lineBox .left, .lineBox .center, .lineBox .right {
+		width: 100%;
+		text-align: center;
+	}
+	.lineBox .media {
+		justify-content: center;
+	}
+}
+@media (max-width: 546px) {
+	.banner h1 {
+		padding-top: 150px;
+	}
+	.img-3 h3 {
+		font-size: 16px;
+	}
+	.img-3 p {
+		font-size: 11px;
+		margin: 5px 5px
+	}
+	.img-4 h3 {
+		font-size: 16px;
+		margin: 0 auto;
+		margin-top: 20px;
+			
+	}
+	
+	.img-4 .text-content {
+		width: 70%;
+		margin: 0 auto;
+		text-align: center;
+		margin-top: 4px;
+		font-size: 12px;
+		padding-bottom: 15px;
+		
+	}
+	.events .eventList {
+		
+		width: 80%;
+	}
 }
